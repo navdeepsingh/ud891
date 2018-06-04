@@ -34,6 +34,8 @@
         // This seems like a good place to do some stuff :)
         if (this.focusedIdx !== 0) {
           this.focusedIdx -= 1;
+        } else {
+          this.focusedIdx = this.buttons.length-1;
         }
 
         break;
@@ -49,6 +51,8 @@
         // This seems like a good place to do some stuff :)
         if (this.focusedIdx !== this.buttons.length-1) {
           this.focusedIdx += 1;
+        } else {
+          this.focusedIdx = 0;
         }
 
         break;
