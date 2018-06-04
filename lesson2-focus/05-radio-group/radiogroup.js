@@ -32,6 +32,9 @@
         e.preventDefault();
 
         // This seems like a good place to do some stuff :)
+        if (this.focusedIdx !== 0) {
+          this.focusedIdx -= 1;
+        }
 
         break;
 
@@ -41,8 +44,12 @@
       case VK_RIGHT: {
 
         e.preventDefault();
+        //console.log(e.target);
 
         // This seems like a good place to do some stuff :)
+        if (this.focusedIdx !== this.buttons.length-1) {
+          this.focusedIdx += 1;
+        }
 
         break;
       }
